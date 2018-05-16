@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<title>老人详细数据</title>
+	</head>
+	<body>
+		<div class="container mt-3">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card mt-3 mb-3">
+						<!--<div class="goback mb-3">
+							<a href="{:url('oldman_look')}" class="btn btn-info">返回</a>
+						</div>-->
+						<div class="card-header">
+							<!--详细资料-->
+							<div class="goback">
+								<a href="{:url('oldman_look')}" class="btn btn-info"><<返回查看</a>
+								<a href="{:url('oldman_edit')}" class="btn btn-warning">返回修改>></a>
+							</div>
+						</div>
+						<div class="card-body">
+							<form>
+								<div class="form-group">
+									<label>老人编号</label>
+									<input type="text" class="form-control" name="mnhome" value="1" disabled="true" style="background-color: rgba(0,0,0,.02);" />
+								</div>
+								<div class="form-group">
+									<label>姓名</label>
+									<input type="text" class="form-control" name="" value="何臻荣" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>年龄</label>
+									<input type="text" class="form-control" name="" value="24" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>性别</label>
+									<input type="text" class="form-control" name="" value="男" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>联系电话</label>
+									<input type="text" class="form-control" name="" value="15521234233" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>学历</label>
+									<input type="text" class="form-control" name="" value="本科" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>疾病情况</label>
+									<input type="text" class="form-control" name="" value="无" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+									<label>婚姻状况</label>
+									<input type="text" class="form-control" name="" value="未婚" style="background-color: rgba(0,0,0,.02);" disabled="true" />
+								</div>
+								<div class="form-group">
+			                        <label >家庭状况</label>                        
+			                        <textarea class="form-control"  id="text_content" name=""  style="background-color: rgba(0,0,0,.02);" value="" disabled="true">父母健在，有5个姐姐，1个弟弟</textarea>
+			                    </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

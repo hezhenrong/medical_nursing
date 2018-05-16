@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广东省医养监管系统</title>
+	</head>
+	<body>
+		<div id="headBox" class="headBox">
+			<div class="headBox_left">
+				<div class="imgBox">
+					<img src="__STATIC_PATH__/static/images/system/login_guohui.jpg"/>
+				</div>
+				<div class="headBox_left_title">
+					<h2>广东省医养监管系统</h2>
+					<h5>GUANGDONG MEDICAL NURSING REGULATARY SYSTEM</h5>
+				</div>
+			</div>
+			<div class="headBox_right">
+				<div class="headBox_right_login">
+					<ul>
+						<li><a href="">登录</a></li>
+						<li><a href="">注册</a></li>
+					</ul>
+				</div>
+				<div class="headBox_right_time">
+					<p>今天是<span>2018年04月30日 星期一</span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		/*统一样式*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*1级头部headBox*/
+		.headBox{
+			width: 100%;
+			height: 70px;
+			background-color: #1a56a8;
+			overflow: hidden;
+		}
+			/*2级.headBox/left*/
+			.headBox .headBox_left{
+				float: left;
+				height: 100%;
+				margin-left: 20px;
+				overflow: hidden;
+			}
+				/*3级.headBox/left/imgBox*/
+				.headBox .headBox_left .imgBox{
+					width: 45px;
+					height: 100%;
+					position: relative;
+					float: left;
+				}
+					.headBox .headBox_left .imgBox img{
+						width: 45px;
+						height: 45px;
+						position: absolute;
+						top: 50%;
+						margin-top: -22px;
+					}
+				/*3级.headBox/left/title*/
+				.headBox .headBox_left .headBox_left_title{
+					float: left;
+					margin-left: 15px;
+					color: white;
+					height: 50px;
+					margin-top: 10px;
+				}
+					.headBox .headBox_left .headBox_left_title h2{
+						font-size: 25px;
+					}
+					.headBox .headBox_left .headBox_left_title h5{
+						font-size: 12px;
+						font-weight: normal;
+					}
+			
+			/*2级.headBox/right*/
+			.headBox .headBox_right{
+				float: right;
+				overflow: hidden;
+				color: white;
+				margin-top: 10px;
+				margin-right: 20px;
+				/*width: 250px;*/
+			}
+				/*3级.headBox/right/login*/
+				.headBox .headBox_right .headBox_right_login{
+					width: 100%;
+				}
+					.headBox .headBox_right .headBox_right_login ul{
+						overflow: hidden;
+						width: 100%;
+					}
+						.headBox .headBox_right .headBox_right_login ul li{
+							list-style: none;
+							float: left;
+							width: 50%;
+							text-align: center;
+							box-sizing: border-box;
+						}
+						.headBox .headBox_right .headBox_right_login ul li:nth-child(2){
+							border-left: 1px solid #fff;
+						}
+							.headBox .headBox_right .headBox_right_login ul li a{
+								text-decoration: none;
+								color: white;
+							}
+				/*3级.headBox/right/time*/
+				.headBox .headBox_right .headBox_right_time{
+					margin-top: 5px;
+				}
+					.headBox .headBox_right .headBox_right_time p{}
+						.headBox .headBox_right .headBox_right_time p span{
+							margin-left: 10px;
+						}
+	</style>
+</html>

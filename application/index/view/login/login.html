@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广东省医养监管系统</title>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul li{
+			list-style: none;
+		}
+		html{
+			height: 100%;
+		}
+		body{
+			background: url("__STATIC_PATH__/static/images/system/loginbg.jpg") no-repeat center bottom;
+			background-color: #83b3f1;
+			height: 100%;
+		}
+	</style>
+	<body>
+		<div class="login_box">
+			<div class="box_head">
+				<img src="__STATIC_PATH__/static/images/system/login_guohui.jpg"/>
+				<div class="box_head_word">
+					<h2>广东省医养监管系统</h2>
+					<h5>Guangdong MNR System</h5>
+				</div>
+			</div>
+			<div class="box_content">
+				<div class="tabBox">
+					<ul class="box_content_head">
+						<li><a href="javascript:setTab('menu',2,1);" id="menu1" class="selected">医养院登录</a></li>
+						<li><a href="javascript:setTab('menu',2,2);" id="menu2">政府监管员登录</a></li>
+						<!--<li>医养院登录</li>
+						<li>政府监管员登录</li>-->
+					</ul>
+				</div>
+				<div class="conBox">
+					<div id="con_menu_1">
+						<ul class="box_content_input">
+							<li><input type="text" name="userName" placeholder="用户名" class="user_bg"/></li>
+							<li><input type="password" name="passWord" placeholder="密码" class="passWord_bg"/></li>
+							<a href="">登录</a>
+						</ul>
+						<ul class="box_content_bottom">
+							<li><a href="">用户注册</a></li>
+							<li><a href="">找回密码</a></li>
+							<li><a href="">常见问题</a></li>
+						</ul>
+					</div>
+					<div id="con_menu_2" style="display: none;">
+						<ul class="box_content_input">
+							<li><input type="text" name="userName" placeholder="用户名" class="user_bg"/></li>
+							<li><input type="password" name="passWord" placeholder="密码" class="passWord_bg"/></li>
+							<a href="">登录</a>
+						</ul>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			//用Tab设置登录页左右导航
+			function setTab(name,n,id){
+				for(var i=1;i<=n;i++){
+					var menu=document.getElementById(name+i);
+					var con=document.getElementById("con_"+name+"_"+i);
+					menu.className=i==id?"selected":"";
+					con.style.display=i==id?"block":"none";
+				}
+			}
+		</script>
+	</body>
+	<style type="text/css">
+		form{
+			display: inline;
+		}
+		/*主box*/
+		.login_box{
+			width: 320px;
+			height: 380px;
+			background: #ededed;
+			position: absolute;
+			left: 50%;
+			margin-left: -160px ;
+			margin-top: 50px;
+		}
+		/*2级.box_head*/
+		.login_box .box_head{
+			width: 100%;
+			height: 100px;
+			background: #109dd3;
+			overflow: hidden;
+			/*display: flex;
+			justify-content: center;
+			align-items: center;*/
+			
+		}
+		/*3级img*/
+		.login_box .box_head img{
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin-left: 26px;
+			margin-top: 25px;
+		}
+		/*3级.box_head_word*/
+		.login_box .box_head .box_head_word{
+			float: left;
+			/*color: white;*/
+			margin-left: 10px;
+			width: 208px;
+			margin-top: 27px;
+		}
+		.login_box .box_head .box_head_word h2{
+			font-size: 22px;
+			color: #ecf3f6;
+		}
+		.login_box .box_head .box_head_word h5{
+			font-size: 12px;
+			color: #8dc4e4;
+		}
+		
+		/*2级.box_content*/
+		.login_box .box_content .tabBox .box_content_head{
+			padding: 10px;
+			overflow: hidden;
+		}
+		.login_box .box_content .tabBox .box_content_head li{
+			width: 50%;
+			float: left;
+			text-align: center;
+			border: 1px solid #d4d4d4;
+			box-sizing: border-box;
+			cursor: hand;
+			border-bottom: none;
+			overflow: hidden;
+		}
+		.login_box .box_content .tabBox .box_content_head li a{
+			width: 100%;
+			height: 100%;
+			padding: 5px;
+			display: inline-block;
+			color: #666;
+			text-decoration: none;
+			border-top: 2px solid #d4d4d4;
+			box-sizing: border-box;
+		}
+		.login_box .box_content .tabBox .box_content_head li a.selected{
+			border-top: 2px solid #1c91cd;
+		}
+		.login_box .box_content .tabBox .box_content_head li:nth-child(2){
+			border-left: none;
+		}
+		
+		/*2级.conBox*/
+		.login_box .box_content .conBox #con_menu_1 .box_content_input{
+			padding: 10px 10px;
+			/*margin-top: 10px;*/
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_input li{
+			width: 100%;
+			margin-top: 10px;
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_input li input{
+			width: 250px;
+			margin-left: 16px;
+			height: 28px;
+			font-size: 15px;
+			border-radius: 3px;
+			border: 1px solid #d4d4d4;
+			padding: 0px 5px;
+			color: #888;
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_input a{
+			width:260px;
+			margin-left: 16px;
+			height: 28px;
+			font-size: 15px;
+			margin-top: 10px;
+			background-color: #1dc16e;
+			color: white;
+			display: inline-block;
+			border-radius: 3px;
+			text-align: center;
+			line-height: 28px;
+			text-decoration: none;
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_bottom{
+			overflow: hidden;
+			font-size: 14px;
+			padding: 0px 50px 0px 44px;
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_bottom li{
+			float: left;
+			width: 33%;
+			text-align: center;
+		}
+		.login_box .box_content .conBox #con_menu_1 .box_content_bottom li a{
+			text-decoration: none;
+			color: rgb(58, 105, 190);
+		}
+		
+		/*2级.conBox,.menu2*/
+		.login_box .box_content .conBox #con_menu_2 .box_content_input{
+			padding: 10px 10px;
+			/*margin-top: 10px;*/
+		}
+		.login_box .box_content .conBox #con_menu_2 .box_content_input li{
+			width: 100%;
+			margin-top: 10px;
+		}
+		.login_box .box_content .conBox #con_menu_2 .box_content_input li input{
+			width: 250px;
+			margin-left: 16px;
+			height: 28px;
+			font-size: 15px;
+			border-radius: 3px;
+			border: 1px solid #d4d4d4;
+			padding: 0px 5px;
+			color: #888;
+		}
+		.login_box .box_content .conBox #con_menu_2 .box_content_input a{
+			width:260px;
+			margin-left: 16px;
+			height: 28px;
+			font-size: 15px;
+			margin-top: 10px;
+			background-color: #109dd3;
+			color: white;
+			display: inline-block;
+			border-radius: 3px;
+			text-align: center;
+			line-height: 28px;
+			text-decoration: none;
+		}
+		
+	</style>
+</html>

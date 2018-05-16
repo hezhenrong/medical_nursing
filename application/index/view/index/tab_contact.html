@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>广东省医养监管系统</title>
+	</head>
+	<body>
+		<div class="userBox">
+			<div class="userBox_information">
+				<p>欢迎您：<span>一一二二医养院</span><a href="">退出</a></p>
+			</div>
+		</div>
+		<div id="headBox" class="headBox">
+			<div class="headBox_left">
+				<div class="imgBox">
+					<img src="__STATIC_PATH__/static/images/system/login_guohui.jpg"/>
+				</div>
+				<div class="headBox_left_title">
+					<h2>广东省医养监管系统</h2>
+					<h5>GUANGDONG MEDICAL NURSING REGULATARY SYSTEM</h5>
+				</div>
+			</div>
+			<div class="headBox_tab">
+				<ul>
+					<li><a href="tab_inputdata.html">信息申报</a></li>
+					<li><a href="tab_notice.html">公告</a></li>
+					<li><a href="tab_userdata.html">用户信息</a></li>
+					<li><a href="tab_contact.html">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		/*统一样式*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		/*1级头部userBox*/
+		.userBox{
+			width: 100%;
+			background-color: #16498e;
+			color: #93abcb;
+		}
+			.userBox .userBox_information{
+				text-align: right;
+			}
+				.userBox .userBox_information p{
+					margin-right: 50px;
+					font-size: 14px;
+				}
+					.userBox .userBox_information p span{
+						color: white;
+						margin-left: 5px;
+						margin-right: 20px;
+					}
+					.userBox .userBox_information p a{
+						text-decoration: none;
+						color: white;
+					}
+		
+		/*1级头部headBox*/
+		.headBox{
+			width: 100%;
+			height: 70px;
+			background-color: #1a56a8;
+			overflow: hidden;
+		}
+			/*2级.headBox/left*/
+			.headBox .headBox_left{
+				float: left;
+				height: 100%;
+				margin-left: 50px;
+				overflow: hidden;
+			}
+				/*3级.headBox/left/imgBox*/
+				.headBox .headBox_left .imgBox{
+					width: 45px;
+					height: 100%;
+					position: relative;
+					float: left;
+				}
+					.headBox .headBox_left .imgBox img{
+						width: 45px;
+						height: 45px;
+						position: absolute;
+						top: 50%;
+						margin-top: -22px;
+					}
+				/*3级.headBox/left/title*/
+				.headBox .headBox_left .headBox_left_title{
+					float: left;
+					margin-left: 15px;
+					color: white;
+					height: 50px;
+					margin-top: 10px;
+				}
+					.headBox .headBox_left .headBox_left_title h2{
+						font-size: 25px;
+					}
+					.headBox .headBox_left .headBox_left_title h5{
+						font-size: 12px;
+						font-weight: normal;
+					}
+			
+			/*2级.headBox/tab*/
+			.headBox .headBox_tab{
+				float: left;
+				color: white;
+				width: 400px;
+				height: 100%;
+				margin-left: 55px;
+				position: relative;
+			}
+				.headBox .headBox_tab ul{
+					overflow: hidden;
+					width: 100%;
+					height: 45px;
+					position: absolute;
+					bottom: 0;
+				}
+					.headBox .headBox_tab ul li{
+						float: left;
+						list-style: none;
+						text-align: center;
+						width: 25%;
+						height: 100%;
+						line-height: 45px;
+					}
+						.headBox .headBox_tab ul li:nth-child(4) a{
+							background-color:white ;
+							color: #1a56a8;
+						}
+						.headBox .headBox_tab ul li:nth-child(4) a:hover{
+							color: #1a56a8;
+						}
+						.headBox .headBox_tab ul li a{
+							text-decoration: none;
+							color: white;
+							width: 100%;
+							height: 100%;
+							display: inline-block;
+							border-radius: 5px 5px 0px 0px;
+							color: #93abcb;
+						}
+						.headBox .headBox_tab ul li a:hover{
+							color: white;
+						}
+			
+			
+					
+	</style>
+</html>
